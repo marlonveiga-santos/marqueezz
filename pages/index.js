@@ -1,18 +1,12 @@
-import styled from "styled-components";
-import db from "../db.json";
-import Widget from "../src/components/Widget";
-import QuizLogo from "../src/components/QuizLogo";
-import QuizBackground from "../src/components/QuizBackground";
-import Footer from "../src/components/Footer";
-import GitHubCorner from "../src/components/GitHubCorner";
-import Head from "next/head";
-
-// const BackgroundImage = styled.div`
-//   background-image: url(${db.bg});
-//   flex: 1;
-//   background-size: cover;
-//   background-position: center;
-// `;
+import React, { useState } from 'react';
+import { useRouter } from 'next/router';
+import styled from 'styled-components';
+import db from '../db.json';
+import Widget from '../src/components/Widget';
+import QuizLogo from '../src/components/QuizLogo';
+import QuizBackground from '../src/components/QuizBackground';
+import Footer from '../src/components/Footer';
+import GitHubCorner from '../src/components/GitHubCorner';
 
 export const QuizContainer = styled.div`
   width: 100%;
@@ -26,20 +20,20 @@ export const QuizContainer = styled.div`
 `;
 
 export default function Home() {
+  const router = useRouter();
+  const [name, setName] = useState('');
+
+  const infosDoEvento = function infosDoEvento(e) {
+    e.preventDefault();
+    router.push(`/quiz?name=${name}`);
+  };
+
+  const handleChange = function change(e) {
+    setName(e.target.value);
+  };
+
   return (
     <QuizBackground backgroundImage={db.bg}>
-      <Head>
-        <title>{db.title}</title>
-        <meta charSet="utf-8" />
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta property="og:title" content={db.title} key="title" />
-        <meta property="og:url" content="https://marqueezz.marlonveiga.vercel.app/" key="url" />
-        <meta property="og:image" content="{db.bg}" key="image" />
-        <meta property="og:type" content="website" key="type" />
-        <meta property="og:description" content={db.description} />
-        <meta property="og:locale" content="pt_BR" />
-      </Head>
       <QuizContainer>
         <QuizLogo />
         <Widget>
@@ -47,10 +41,14 @@ export default function Home() {
             <h1>{db.title}</h1>
           </Widget.Header>
           <Widget.Content>
-            <p>{db.description}</p>
+            <form onSubmit={infosDoEvento}>
+              <input onChange={handleChange} placeholder="Diz ai seu nome" />
+              <button type="submit" disabled={name.length === 0}>
+                Jogar
+              </button>
+            </form>
           </Widget.Content>
         </Widget>
-
         <Widget>
           <Widget.Content>
             <h1>Quizes da Galera</h1>

@@ -4,25 +4,73 @@
     "description": "Teste os seus conhecimentos sobre HTML, a linguagem mais utilizada na informática !",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
+        "image": "https://media.giphy.com/media/l0IyjiXOXTX6Yemsg/giphy.gif",
+        "title": "Qual o significado da sigla HTML ?",
         "description": "Essa é pra aquecer",
         "answer": 2,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "Hyperthreading Microprocessor for Linux",
+          "Hyper Technology Mobile Launcher",
+          "Hypertext Markup Language",
+          "Hipopótamos Tailandeses Leitores de Mangá"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
+        "image": "https://media.giphy.com/media/glvyCVWYJ21fq/giphy.gif",
+        "title": "Qual das tags NÃO é mais recomendada para uso ?",
+        "description": "Uma pergunta clássica !",
+        "answer": 1,
+        "alternatives": [
+          "<section>",
+          "<marquee>",
+          "<progress>",
+          "<div>"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/3orif7mZcicfHOiE1O/giphy.gif",
+        "title": "Como permitir a edição do conteúdo dentro de uma tag <div>?",
+        "description": "Notepad on-line ?",
+        "answer": 3,
+        "alternatives": [
+          "<div editable='true'></div>",
+          "<div hasedit=1></div>",
+          "Não é possivel.",
+          "<div contenteditable='true'></div>"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/l4JyX3V0yydvPHNBe/giphy.gif",
+        "title": "Qual tag é utilizada para informar a falta de uma linguagem de script?",
+        "description": "O Next não precisa dela.",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+          "<noscript>",
+          "<script value='false'>",
+          "<scriptless>",
+          "<html script='false'>"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/3oEjI4sFlp73fvEYgw/giphy.gif",
+        "title": "Como inserir um simbolo especial, como o ©, na forma padrão do HTML ?",
+        "description": "Existem outras maneiras já.",
+        "answer": 2,
+        "alternatives": [
+          "<copy>",
+          "${copy}",
+          "&copy;",
+          "{copy}"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/MqqZykfPyrKeY/giphy.gif",
+        "title": "HTML é uma linguagem de programação ?",
+        "description": "Ma oe !!!",
+        "answer": 1,
+        "alternatives": [
+           "Verdadeiro",
+           "Falso"
         ]
       }
     ],
@@ -32,10 +80,10 @@
     "theme": {
       "colors": {
         "primary": "#3a86ff",
-        "secondary": "#e54b4b",
+        "secondary": "#FF5722",
         "mainBg": "#2e294e",
         "contrastText": "#e8e8e8",
-        "wrong": "#FF5722",
+        "wrong": "#e54b4b",
         "success": "#4CAF50"
       },
       "borderRadius": "8px"

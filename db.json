@@ -1,5 +1,5 @@
 {
-    "bg": "https://marquesfernandes.com/wp-content/uploads/2020/04/florian-olivo-4hbJ-eymZ1o-unsplash.jpg",
+    "bg": "https://images.unsplash.com/photo-1518773553398-650c184e0bb3?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80",
     "title": "Marqueezz: Quiz HTML",
     "description": "Teste os seus conhecimentos sobre HTML, a linguagem mais utilizada na informática !",
     "questions": [
@@ -75,7 +75,11 @@
       }
     ],
     "external": [
-      ""
+      "https://doctor-who-quiz.emanuelpna.vercel.app/",
+      "https://divequiz.fncarneiro.vercel.app/",
+      "https://quiz-games.gabrielwolf-dev.vercel.app/",
+      "https://aluraquiz-arcade.wesdrasalves.vercel.app/",
+      "https://ai-quiz.idcesares.vercel.app/"
     ],
     "theme": {
       "colors": {

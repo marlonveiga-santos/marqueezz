@@ -26,7 +26,9 @@ export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
-        <QuizLogo />
+        <QuizLogo
+          logo={db.logo}
+        />
         <Widget
           as={motion.section}
           transition={{ delay: 0, duration: 0.5 }}

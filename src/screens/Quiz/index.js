@@ -100,7 +100,7 @@ function QuestionWidget({
           height: '150px',
           objectFit: 'cover',
         }}
-        src={question.image}
+        src={question.image ?? 'https://media.giphy.com/media/3ohuPDuPHDuGnVtp5u/giphy.gif'}
       />
       <Widget.Content>
         <h2>
@@ -138,7 +138,8 @@ function QuestionWidget({
                   style={{ display: 'none' }}
                   id={alternativeId}
                   name={questionId}
-                  onChange={() => setSelectedAlternative(alternativeIndex)}
+                  // onChange={() => setSelectedAlternative(alternativeIndex)}
+                  onClick={() => setSelectedAlternative(alternativeIndex)}
                   type="radio"
                 />
                 {alternative}
@@ -165,7 +166,7 @@ const screenStates = {
   LOADING: 'LOADING',
   RESULT: 'RESULT',
 };
-export default function QuizPage({ externalQuestions, externalBg }) {
+export default function QuizPage({ externalQuestions, externalBg, externalLogo }) {
   const [screenState, setScreenState] = React.useState(screenStates.LOADING);
   const [results, setResults] = React.useState([]);
   const [currentQuestion, setCurrentQuestion] = React.useState(0);
@@ -206,7 +207,9 @@ export default function QuizPage({ externalQuestions, externalBg }) {
   return (
     <QuizBackground backgroundImage={bg}>
       <QuizContainer>
-        <QuizLogo />
+        <QuizLogo
+          logo={externalLogo}
+        />
         {screenState === screenStates.QUIZ && (
           <QuestionWidget
             question={question}

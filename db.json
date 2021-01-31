@@ -1,95 +1,83 @@
 {
-    "bg": "https://images.unsplash.com/photo-1518773553398-650c184e0bb3?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80",
-    "title": "Marqueezz: Quiz HTML",
-    "description": "Teste os seus conhecimentos sobre HTML, a linguagem mais utilizada na informática !",
-    "questions": [
-      {
-        "image": "https://media.giphy.com/media/l0IyjiXOXTX6Yemsg/giphy.gif",
-        "title": "Qual o significado da sigla HTML ?",
-        "description": "Essa é pra aquecer",
-        "answer": 2,
-        "alternatives": [
-          "Hyperthreading Microprocessor for Linux",
-          "Hyper Technology Mobile Launcher",
-          "Hypertext Markup Language",
-          "Hipopótamos Tailandeses Leitores de Mangá"
-        ]
-      },
-      {
-        "image": "https://media.giphy.com/media/glvyCVWYJ21fq/giphy.gif",
-        "title": "Qual das tags NÃO é mais recomendada para uso ?",
-        "description": "Uma pergunta clássica !",
-        "answer": 1,
-        "alternatives": [
-          "<section>",
-          "<marquee>",
-          "<progress>",
-          "<div>"
-        ]
-      },
-      {
-        "image": "https://media.giphy.com/media/3orif7mZcicfHOiE1O/giphy.gif",
-        "title": "Como permitir a edição do conteúdo dentro de uma tag <div>?",
-        "description": "Notepad on-line ?",
-        "answer": 3,
-        "alternatives": [
-          "<div editable='true'></div>",
-          "<div hasedit=1></div>",
-          "Não é possivel.",
-          "<div contenteditable='true'></div>"
-        ]
-      },
-      {
-        "image": "https://media.giphy.com/media/l4JyX3V0yydvPHNBe/giphy.gif",
-        "title": "Qual tag é utilizada para informar a falta de uma linguagem de script?",
-        "description": "O Next não precisa dela.",
-        "answer": 0,
-        "alternatives": [
-          "<noscript>",
-          "<script value='false'>",
-          "<scriptless>",
-          "<html script='false'>"
-        ]
-      },
-      {
-        "image": "https://media.giphy.com/media/3oEjI4sFlp73fvEYgw/giphy.gif",
-        "title": "Como inserir um simbolo especial, como o ©, na forma padrão do HTML ?",
-        "description": "Existem outras maneiras já.",
-        "answer": 2,
-        "alternatives": [
-          "<copy>",
-          "${copy}",
-          "&copy;",
-          "{copy}"
-        ]
-      },
-      {
-        "image": "https://media.giphy.com/media/MqqZykfPyrKeY/giphy.gif",
-        "title": "HTML é uma linguagem de programação ?",
-        "description": "Ma oe !!!",
-        "answer": 1,
-        "alternatives": [
-           "Verdadeiro",
-           "Falso"
-        ]
-      }
-    ],
-    "external": [
-      "https://doctor-who-quiz.emanuelpna.vercel.app/",
-      "https://divequiz.fncarneiro.vercel.app/",
-      "https://quiz-games.gabrielwolf-dev.vercel.app/",
-      "https://aluraquiz-arcade.wesdrasalves.vercel.app/",
-      "https://ai-quiz.idcesares.vercel.app/"
-    ],
-    "theme": {
-      "colors": {
-        "primary": "#3a86ff",
-        "secondary": "#FF5722",
-        "mainBg": "#2e294e",
-        "contrastText": "#e8e8e8",
-        "wrong": "#e54b4b",
-        "success": "#4CAF50"
-      },
-      "borderRadius": "8px"
+  "bg": "https://images.unsplash.com/photo-1518773553398-650c184e0bb3?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80",
+  "title": "Marqueezz: Quiz HTML",
+  "description": "Teste os seus conhecimentos sobre HTML, a linguagem mais utilizada na informática !",
+  "logo":"logo.png",
+  "questions": [
+    {
+      "image": "https://media.giphy.com/media/l0IyjiXOXTX6Yemsg/giphy.gif",
+      "title": "Qual o significado da sigla HTML ?",
+      "description": "Essa é pra aquecer",
+      "answer": 2,
+      "alternatives": [
+        "Hyperthreading Microprocessor for Linux",
+        "Hyper Technology Mobile Launcher",
+        "Hypertext Markup Language",
+        "Hipopótamos Tailandeses Leitores de Mangá"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/glvyCVWYJ21fq/giphy.gif",
+      "title": "Qual das tags NÃO é mais recomendada para uso ?",
+      "description": "Uma pergunta clássica !",
+      "answer": 1,
+      "alternatives": ["<section>", "<marquee>", "<progress>", "<div>"]
+    },
+    {
+      "image": "https://media.giphy.com/media/3orif7mZcicfHOiE1O/giphy.gif",
+      "title": "Como permitir a edição do conteúdo dentro de uma tag <div>?",
+      "description": "Notepad on-line ?",
+      "answer": 3,
+      "alternatives": [
+        "<div editable='true'></div>",
+        "<div hasedit=1></div>",
+        "Não é possivel.",
+        "<div contenteditable='true'></div>"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/l4JyX3V0yydvPHNBe/giphy.gif",
+      "title": "Qual tag é utilizada para informar a falta de uma linguagem de script?",
+      "description": "O Next não precisa dela.",
+      "answer": 0,
+      "alternatives": [
+        "<noscript>",
+        "<script value='false'>",
+        "<scriptless>",
+        "<html script='false'>"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/3oEjI4sFlp73fvEYgw/giphy.gif",
+      "title": "Como inserir um simbolo especial, como o ©, na forma padrão do HTML ?",
+      "description": "Existem outras maneiras já.",
+      "answer": 2,
+      "alternatives": ["<copy>", "${copy}", "&copy;", "{copy}"]
+    },
+    {
+      "image": "https://media.giphy.com/media/MqqZykfPyrKeY/giphy.gif",
+      "title": "HTML é uma linguagem de programação ?",
+      "description": "Ma oe !!!",
+      "answer": 1,
+      "alternatives": ["Verdadeiro", "Falso"]
     }
+  ],
+  "external": [
+    "https://doctor-who-quiz.emanuelpna.vercel.app/",
+    "https://quiz-games.gabrielwolf-dev.vercel.app/",
+    "https://lotr-quiz.filipe1309.vercel.app/",
+    "https://aleatorio-quiz.viniciud.vercel.app/",
+    "https://quiz-valorant.johnatanivini.vercel.app/"
+  ],
+  "theme": {
+    "colors": {
+      "primary": "#3a86ff",
+      "secondary": "#FF5722",
+      "mainBg": "#2e294e",
+      "contrastText": "#e8e8e8",
+      "wrong": "#e54b4b",
+      "success": "#4CAF50"
+    },
+    "borderRadius": "8px"
   }
+}

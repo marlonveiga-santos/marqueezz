@@ -37,7 +37,7 @@ function ResultWidget({ results }) {
         <ul>
           {results.map((result, index) => (
             <li key={`result__${result}`}>
-              #
+              Q:
               {index + 1}
               {' '}
               Resultado:
